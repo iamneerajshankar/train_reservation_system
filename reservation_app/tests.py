@@ -30,7 +30,7 @@ class TestSeatReservationSystem:
         # Create some SeatReservation objects
         # Call the get method of SeatReservationList
         assert get_response.status_code == 200  # URL is reachable
-        assert not SeatReservation.objects.count()  # No person object exists (checking in DB)
+        assert not SeatReservation.objects.count()  # No object exists (checking in DB)
 
     # Tests that the post method returns the reservation details when a reservation is successfully made
     @pytest.mark.django_db
